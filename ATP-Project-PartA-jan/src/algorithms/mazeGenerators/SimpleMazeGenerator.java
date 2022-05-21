@@ -5,6 +5,10 @@ import java.util.Random;
 public class SimpleMazeGenerator extends AMazeGenerator{
 
     public Maze generate(int row, int col) {
+        if (row <= 1 || col <= 1){
+            row = 10;
+            col = 10;
+        }
         Maze m = new Maze(row, col);
         for (int i = 0 ; i < row ; i ++){
             for (int j = 0 ; j < col ; j++){
@@ -73,7 +77,7 @@ public class SimpleMazeGenerator extends AMazeGenerator{
 
     public static void main(String[] args) {
         SimpleMazeGenerator smg = new SimpleMazeGenerator();
-        Maze m = smg.generate(13, 5);
+        Maze m = smg.generate(50, 50);
         m.print();
     }
 }
