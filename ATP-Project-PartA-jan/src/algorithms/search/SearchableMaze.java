@@ -38,59 +38,59 @@ public class SearchableMaze implements ISearchable {
         int r = m.getAt().getRowIndex();
         int c = m.getAt().getColumnIndex();
         if (this.original.get_value(r - 1, c) == 0) {
-            this.newer[r - 1][c].setCost((double)vert);
+            this.newer[r - 1][c].setCost(vert);
             ret.add(this.newer[r - 1][c]);
             if (this.original.get_value(r - 1, c + 1) == 0) {
-                this.newer[r - 1][c + 1].setCost((double)dio);
+                this.newer[r - 1][c + 1].setCost(dio);
                 ret.add(this.newer[r - 1][c + 1]);
             }
         }
 
         if (this.original.get_value(r, c + 1) == 0) {
             if (this.original.get_value(r - 1, c + 1) == 0 && !ret.contains(this.newer[r - 1][c + 1])) {
-                this.newer[r - 1][c + 1].setCost((double)dio);
+                this.newer[r - 1][c + 1].setCost(dio);
                 ret.add(this.newer[r - 1][c + 1]);
             }
 
             ret.add(this.newer[r][c + 1]);
-            this.newer[r][c + 1].setCost((double)vert);
+            this.newer[r][c + 1].setCost(vert);
             if (this.original.get_value(r + 1, c + 1) == 0) {
-                this.newer[r + 1][c + 1].setCost((double)dio);
+                this.newer[r + 1][c + 1].setCost(dio);
                 ret.add(this.newer[r + 1][c + 1]);
             }
         }
 
         if (this.original.get_value(r + 1, c) == 0) {
             if (this.original.get_value(r + 1, c + 1) == 0 && !ret.contains(this.newer[r + 1][c + 1])) {
-                this.newer[r + 1][c + 1].setCost((double)dio);
+                this.newer[r + 1][c + 1].setCost(dio);
                 ret.add(this.newer[r + 1][c + 1]);
             }
 
             ret.add(this.newer[r + 1][c]);
-            this.newer[r + 1][c].setCost((double)vert);
+            this.newer[r + 1][c].setCost(vert);
             if (this.original.get_value(r + 1, c - 1) == 0) {
                 ret.add(this.newer[r + 1][c - 1]);
-                this.newer[r + 1][c - 1].setCost((double)dio);
+                this.newer[r + 1][c - 1].setCost(dio);
             }
         }
 
         if (this.original.get_value(r, c - 1) == 0) {
             if (this.original.get_value(r + 1, c - 1) == 0 && !ret.contains(this.newer[r + 1][c - 1])) {
                 ret.add(this.newer[r + 1][c - 1]);
-                this.newer[r + 1][c - 1].setCost((double)dio);
+                this.newer[r + 1][c - 1].setCost(dio);
             }
 
             ret.add(this.newer[r][c - 1]);
-            this.newer[r][c - 1].setCost((double)vert);
+            this.newer[r][c - 1].setCost(vert);
             if (this.original.get_value(r - 1, c - 1) == 0) {
                 ret.add(this.newer[r - 1][c - 1]);
-                this.newer[r - 1][c - 1].setCost((double)dio);
+                this.newer[r - 1][c - 1].setCost(dio);
             }
         }
 
         if (this.original.get_value(r - 1, c) == 0 && this.original.get_value(r - 1, c - 1) == 0 && !ret.contains(this.newer[r - 1][c - 1])) {
             ret.add(this.newer[r - 1][c - 1]);
-            this.newer[r - 1][c - 1].setCost((double)dio);
+            this.newer[r - 1][c - 1].setCost(dio);
         }
 
         return ret;
@@ -104,7 +104,7 @@ public class SearchableMaze implements ISearchable {
             for(int j = 0; j < cols; ++j) {
                 this.newer[i][j].setVisit(false);
                 this.newer[i][j].setCameFrom((AState)null);
-                this.newer[i][j].setCost(0.0);
+                this.newer[i][j].setCost(0);
             }
         }
 

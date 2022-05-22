@@ -2,7 +2,7 @@ package algorithms.search;
 
 public abstract class AState {
     private String astate = null;
-    private double cost = 0.0;
+    private int cost = 0;
     private AState cameFrom = null;
     private boolean visit = false;
 
@@ -17,7 +17,7 @@ public abstract class AState {
         this.astate = astate;
     }
 
-    public void setCost(double cost) {
+    public void setCost(int cost) {
         this.cost = cost;
     }
 
@@ -29,7 +29,7 @@ public abstract class AState {
         this.visit = visit;
     }
 
-    public double getCost() {
+    public int getCost() {
         return this.cost;
     }
 

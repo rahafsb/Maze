@@ -30,10 +30,6 @@ public class DepthFirstSearch extends ASearchingAlgorithm {
             }
 
             if (as == s.getGoalState()) {
-                while (!my_stack.isEmpty()){
-                    my_stack.pop();
-                    this.setEval(getNumberOfNodesEvaluated()+1);
-                }
                 up_side.push(as);
 
                 while(true) {

@@ -25,10 +25,11 @@ public class BreadthFirstSearch extends ASearchingAlgorithm {
             this.setEval(this.getNumberOfNodesEvaluated() + 1);
             ArrayList<AState> start_childs = domain.getAllPossibleStates(start, 10, 15);
 
-            for(int i = 0; i < start_childs.size(); ++i) {
+            for (int i = 0; i < start_childs.size(); ++i) {
                 if (!((AState)start_childs.get(i)).isVisit()) {
-                    Q_state.add(start_childs.get(i));
                     ((AState)start_childs.get(i)).setCameFrom(start);
+                    start_childs.get(i).setCost(start_childs.get(i).getCost() + start_childs.get(i).getCameFrom().getCost());
+                    Q_state.add(start_childs.get(i));
                     start_childs.get(i).setVisit(true);
                 }
                 if (start_childs.get(i).equals(domain.getGoalState())) {

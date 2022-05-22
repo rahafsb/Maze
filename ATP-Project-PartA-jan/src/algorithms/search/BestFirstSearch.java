@@ -20,6 +20,6 @@ class Comperer implements Comparator<AState> {
     }
 
     public int compare(AState a, AState b) {
-        return (int)(a.getCost() - b.getCost());
+        return (a.getCost() - b.getCost());
     }
 }

@@ -10,7 +10,7 @@ public class MazeState extends AState {
         this.setAstate(at.toString());
     }
 
-    public MazeState(Position at, AState father, double cost) {
+    public MazeState(Position at, AState father, int cost) {
         this.at = at;
         this.setAstate(at.toString());
         this.setCameFrom(father);
