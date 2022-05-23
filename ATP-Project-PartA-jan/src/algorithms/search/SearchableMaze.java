@@ -37,58 +37,57 @@ public class SearchableMaze implements ISearchable {
         MazeState m = (MazeState)s;
         int r = m.getAt().getRowIndex();
         int c = m.getAt().getColumnIndex();
-        if (this.original.get_value(r - 1, c) == 0) {
+        if (this.original.get_value(r - 1, c) == 0 && !this.newer[r-1][c].isVisit()) {
             this.newer[r - 1][c].setCost(vert);
             ret.add(this.newer[r - 1][c]);
-            if (this.original.get_value(r - 1, c + 1) == 0) {
-                this.newer[r - 1][c + 1].setCost(dio);
-                ret.add(this.newer[r - 1][c + 1]);
-            }
+        }
+        if (this.original.get_value(r - 1, c + 1) == 0 && !this.newer[r-1][c+1].isVisit() && this.original.get_value(r - 1, c) == 0) {
+            this.newer[r - 1][c + 1].setCost(dio);
+            ret.add(this.newer[r - 1][c + 1]);
         }
 
-        if (this.original.get_value(r, c + 1) == 0) {
-            if (this.original.get_value(r - 1, c + 1) == 0 && !ret.contains(this.newer[r - 1][c + 1])) {
-                this.newer[r - 1][c + 1].setCost(dio);
-                ret.add(this.newer[r - 1][c + 1]);
-            }
-
+        if (this.original.get_value(r, c + 1) == 0 && !this.newer[r][c+1].isVisit()) {
             ret.add(this.newer[r][c + 1]);
             this.newer[r][c + 1].setCost(vert);
-            if (this.original.get_value(r + 1, c + 1) == 0) {
-                this.newer[r + 1][c + 1].setCost(dio);
-                ret.add(this.newer[r + 1][c + 1]);
-            }
+        }
+        if (this.original.get_value(r + 1, c + 1) == 0 && !this.newer[r+1][c+1].isVisit() && this.original.get_value(r, c + 1) == 0) {
+            this.newer[r + 1][c + 1].setCost(dio);
+            ret.add(this.newer[r + 1][c + 1]);
+        }
+        if (this.original.get_value(r - 1, c + 1) == 0 && !ret.contains(this.newer[r - 1][c + 1]) && !this.newer[r-1][c+1].isVisit() && this.original.get_value(r, c + 1) == 0) {
+            this.newer[r - 1][c + 1].setCost(dio);
+            ret.add(this.newer[r - 1][c + 1]);
         }
 
-        if (this.original.get_value(r + 1, c) == 0) {
-            if (this.original.get_value(r + 1, c + 1) == 0 && !ret.contains(this.newer[r + 1][c + 1])) {
-                this.newer[r + 1][c + 1].setCost(dio);
-                ret.add(this.newer[r + 1][c + 1]);
-            }
+        if (this.original.get_value(r + 1, c) == 0 && !this.newer[r+1][c].isVisit()) {
+
 
             ret.add(this.newer[r + 1][c]);
             this.newer[r + 1][c].setCost(vert);
-            if (this.original.get_value(r + 1, c - 1) == 0) {
-                ret.add(this.newer[r + 1][c - 1]);
-                this.newer[r + 1][c - 1].setCost(dio);
-            }
+        }
+        if (this.original.get_value(r + 1, c - 1) == 0 && !this.newer[r+1][c-1].isVisit() && this.original.get_value(r + 1, c) == 0) {
+            ret.add(this.newer[r + 1][c - 1]);
+            this.newer[r + 1][c - 1].setCost(dio);
+        }
+        if (this.original.get_value(r + 1, c + 1) == 0 && !ret.contains(this.newer[r + 1][c + 1]) && !this.newer[r+1][c+1].isVisit() && this.original.get_value(r + 1, c) == 0) {
+            this.newer[r + 1][c + 1].setCost(dio);
+            ret.add(this.newer[r + 1][c + 1]);
         }
 
-        if (this.original.get_value(r, c - 1) == 0) {
-            if (this.original.get_value(r + 1, c - 1) == 0 && !ret.contains(this.newer[r + 1][c - 1])) {
-                ret.add(this.newer[r + 1][c - 1]);
-                this.newer[r + 1][c - 1].setCost(dio);
-            }
-
+        if (this.original.get_value(r, c - 1) == 0 && !this.newer[r][c-1].isVisit()) {
             ret.add(this.newer[r][c - 1]);
             this.newer[r][c - 1].setCost(vert);
-            if (this.original.get_value(r - 1, c - 1) == 0) {
-                ret.add(this.newer[r - 1][c - 1]);
-                this.newer[r - 1][c - 1].setCost(dio);
-            }
+        }
+        if (this.original.get_value(r + 1, c - 1) == 0 && !ret.contains(this.newer[r + 1][c - 1]) && !this.newer[r+1][c-1].isVisit() && this.original.get_value(r, c - 1) == 0 ) {
+            ret.add(this.newer[r + 1][c - 1]);
+            this.newer[r + 1][c - 1].setCost(dio);
+        }
+        if (this.original.get_value(r - 1, c - 1) == 0 && !this.newer[r-1][c-1].isVisit() && this.original.get_value(r, c - 1) == 0 ) {
+            ret.add(this.newer[r - 1][c - 1]);
+            this.newer[r - 1][c - 1].setCost(dio);
         }
 
-        if (this.original.get_value(r - 1, c) == 0 && this.original.get_value(r - 1, c - 1) == 0 && !ret.contains(this.newer[r - 1][c - 1])) {
+        if (this.original.get_value(r - 1, c) == 0 && this.original.get_value(r - 1, c - 1) == 0 && !ret.contains(this.newer[r - 1][c - 1]) && !this.newer[r-1][c-1].isVisit()) {
             ret.add(this.newer[r - 1][c - 1]);
             this.newer[r - 1][c - 1].setCost(dio);
         }

@@ -1,9 +1,6 @@
 package algorithms.search;
 
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.Queue;
-import java.util.Stack;
+import java.util.*;
 
 public class BreadthFirstSearch extends ASearchingAlgorithm {
     public BreadthFirstSearch() {
@@ -19,8 +16,8 @@ public class BreadthFirstSearch extends ASearchingAlgorithm {
         ArrayList<AState> sol = new ArrayList();
 
         label44:
-        while(!Q_state.isEmpty()) {
-            AState start = (AState)Q_state.remove();
+        while(Q_state.peek() != null) {
+            AState start = (AState)Q_state.poll();
             start.setVisit(true);
             this.setEval(this.getNumberOfNodesEvaluated() + 1);
             ArrayList<AState> start_childs = domain.getAllPossibleStates(start, 10, 15);
@@ -68,4 +65,35 @@ public class BreadthFirstSearch extends ASearchingAlgorithm {
     public String getName() {
         return "BreadthFirstSearch";
     }
+//    public static void main(String[] args) {
+//        Queue<xy> pq = new PriorityQueue<>(new Comp());
+//        xy one = new xy(7);
+//        xy two = new xy(7);
+//        xy three = new xy(7);
+//        pq.add(one);
+//        pq.add(two);
+//        pq.add(three);
+//        while(pq.peek() != null){
+//            System.out.println(pq.poll());
+//        }
+//    }
 }
+//class xy{
+//    static int c = 0;
+//    int x;
+//    int y;
+//
+//    public xy(int x) {
+//        this.x = x;
+//        y = c;
+//        c += 1;
+//    }
+//}
+//class Comp implements Comparator<xy> {
+//    Comp() {
+//    }
+//
+//    public int compare(xy a, xy b) {
+//        return (a.x - b.x);
+//    }
+//}
