@@ -11,7 +11,6 @@ public class MyMazeGenerator extends AMazeGenerator {
         for (int i=0; i< row; i++){
             for(int j=0; j< col; j++){
                 ret.setMaze(i,j,1);
-
             }
         }
         return ret;

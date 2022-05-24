@@ -6,7 +6,7 @@ public class EmptyMazeGenerator extends AMazeGenerator{
         if (row >= 2 && col >= 2) {
             return new Maze(row, col);
         } else {
-            return new Maze(10, 10);
+            return null;
         }
     }
 

@@ -6,8 +6,7 @@ public class SimpleMazeGenerator extends AMazeGenerator{
 
     public Maze generate(int row, int col) {
         if (row <= 1 || col <= 1){
-            row = 10;
-            col = 10;
+            return null;
         }
         Maze m = new Maze(row, col);
         for (int i = 0 ; i < row ; i ++){
@@ -25,7 +24,7 @@ public class SimpleMazeGenerator extends AMazeGenerator{
         Position mover = new Position(m.getStartPosition().getRowIndex(), m.getStartPosition().getColumnIndex());
         int [] next_move = pick_next_move();
         while (mover.getRowIndex() != m.getGoalPosition().getRowIndex() || mover.getColumnIndex() != m.getGoalPosition().getColumnIndex()){
-            int is_legal = is_move_legal(next_move, m.rows, m.cols, mover);
+            int is_legal = is_move_legal(next_move, m.get_rows_cols()[0], m.get_rows_cols()[1], mover);
             if (is_legal == 0){//not legal
                 next_move = pick_next_move();
             }

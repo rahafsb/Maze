@@ -11,6 +11,9 @@ public class SearchableMaze implements ISearchable {
 
 
     public SearchableMaze(Maze original) {
+        if (original == null){
+            return;
+        }
         this.original = original;
         int rows =original.get_rows_cols()[0];
         int cols = original.get_rows_cols()[1];

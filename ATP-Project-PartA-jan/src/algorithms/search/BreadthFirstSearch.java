@@ -9,7 +9,10 @@ public class BreadthFirstSearch extends ASearchingAlgorithm {
         return solver(domain, new LinkedList<>());
     }
     public Solution solver (ISearchable domain, Queue<AState>Q_state){
-        Q_state.add(domain.getStartState()); /// domain/StartState is null!!
+        if (domain == null){
+            return null;
+        }
+        Q_state.add(domain.getStartState());
         Stack<AState> up_side = new Stack<>();
         ArrayList<AState> sol = new ArrayList<>();
         while(!Q_state.isEmpty()){
@@ -19,7 +22,7 @@ public class BreadthFirstSearch extends ASearchingAlgorithm {
             setEval(getNumberOfNodesEvaluated()+1);
             ArrayList<AState> start_childs = domain.getAllPossibleStates(start,10,15);
             for(int i = 0; i < start_childs.size(); i++){
-                if (!start_childs.get(i).isVisit()){///// && start_childs.get(i).getCameFrom() ==null){ //////////
+                if (!start_childs.get(i).isVisit()){
                     start_childs.get(i).setCost(start_childs.get(i).getCost()+start.getCost());//////
                     Q_state.add(start_childs.get(i));
                     start_childs.get(i).setCameFrom(start);

@@ -8,18 +8,24 @@ public class BestFirstSearch extends BreadthFirstSearch {
     }
 
     public Solution solve(ISearchable domain) {
+        if (domain == null){
+            return null;
+        }
         return this.solver(domain, new PriorityQueue(new Comperer()));
     }
 
     public String getName() {
-        return " BestFirstSearch";
+        return "BestFirstSearch";
     }
 }
+
+
+
 class Comperer implements Comparator<AState> {
     Comperer() {
     }
 
     public int compare(AState a, AState b) {
-        return (a.getCost() - b.getCost());
+        return (int)(a.getCost() - b.getCost());
     }
 }

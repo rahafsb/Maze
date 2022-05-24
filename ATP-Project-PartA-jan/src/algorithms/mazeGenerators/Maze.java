@@ -4,13 +4,16 @@ import java.util.Random;
 
 public class Maze {
 
-    final int rows;
-    final int cols;
-    final Position p_start;
-    final Position p_end;
+    private int rows;
+    private int cols;
+    private Position p_start;
+    private Position p_end;
     private int [][] maze;
 
     public Maze(int rows, int cols) {
+        if (rows <= 1 || cols <= 1){
+            return;
+        }
         this.rows = rows;
         this.cols = cols;
         maze = new int[rows][cols];
