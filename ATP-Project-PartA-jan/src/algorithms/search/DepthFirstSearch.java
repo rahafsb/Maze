@@ -8,8 +8,11 @@ public class DepthFirstSearch extends ASearchingAlgorithm {
     }
 
     public Solution solve(ISearchable s) {
-        Stack<AState> my_stack = new Stack();
-        Stack<AState> up_side = new Stack();
+        if (s == null){
+            return null;
+        }
+        Stack<AState> my_stack = new Stack<>();
+        Stack<AState> up_side = new Stack<>();
         my_stack.push(s.getStartState());
 
         int i;
@@ -43,7 +46,7 @@ public class DepthFirstSearch extends ASearchingAlgorithm {
             }
         }
 
-        ArrayList<AState> sol = new ArrayList();
+        ArrayList<AState> sol = new ArrayList<>();
         int d = up_side.size();
 
         for(i = 0; i < d; ++i) {

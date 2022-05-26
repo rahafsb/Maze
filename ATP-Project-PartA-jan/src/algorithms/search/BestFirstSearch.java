@@ -8,9 +8,6 @@ public class BestFirstSearch extends BreadthFirstSearch {
     }
 
     public Solution solve(ISearchable domain) {
-        if (domain == null){
-            return null;
-        }
         return this.solver(domain, new PriorityQueue(new Comperer()));
     }
 

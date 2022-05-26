@@ -1,19 +1,9 @@
 package algorithms.mazeGenerators;
 
 public class EmptyMazeGenerator extends AMazeGenerator{
-
+    public EmptyMazeGenerator() {}
     public Maze generate(int row, int col) {
-        if (row >= 2 && col >= 2) {
-            return new Maze(row, col);
-        } else {
-            return null;
-        }
-    }
-
-    public static void main(String[] args) {
-        EmptyMazeGenerator smg = new EmptyMazeGenerator();
-        Maze m = smg.generate(1, 4);
-        m.print();
+        return new Maze(row, col);
     }
 }
 
