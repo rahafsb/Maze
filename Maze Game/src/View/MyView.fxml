@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import View.MazeDisplayer?>
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.media.MediaView?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="1600.0" prefWidth="1700.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.MyViewController">
+   <children>
+      <Accordion layoutX="146.0" layoutY="55.0" />
+      <Button fx:id="button1" layoutX="8.0" layoutY="112.0" mnemonicParsing="false" onAction="#generateMaze" prefHeight="27.0" prefWidth="116.0" text="generate Maze">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="14.0" layoutY="46.0" prefHeight="18.0" prefWidth="78.0" text="Maze Rows:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="16.0" layoutY="77.0" prefHeight="18.0" prefWidth="100.0" text="Maze Columns:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="button11" layoutX="5.0" layoutY="149.0" mnemonicParsing="false" onAction="#solveMaze" prefHeight="27.0" prefWidth="122.0" text="Solve Maze">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <TextField fx:id="textField_mazeRows" layoutX="127.0" layoutY="42.0" prefHeight="27.0" prefWidth="92.0" />
+      <Pane layoutX="548.0" layoutY="107.0" prefHeight="700.0" prefWidth="700.0">
+         <children>
+            <MazeDisplayer fx:id="mazeDisplayer" height="700.0" onKeyPressed="#keyPressed" onMouseDragged="#dragShip" onMousePressed="#startDrag" onMouseReleased="#stopDrag" width="700.0" />
+         </children></Pane>
+      <TextField fx:id="textField_mazeCoulmns" layoutX="127.0" layoutY="73.0" prefHeight="27.0" prefWidth="92.0" />
+      <VBox layoutX="19.0" layoutY="14.0" prefHeight="27.0" prefWidth="378.0" />
+      <MenuBar prefHeight="28.0" prefWidth="2127.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="New" />
+                  <MenuItem mnemonicParsing="false" text="Save" />
+                  <MenuItem mnemonicParsing="false" text="Load" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Options">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Properties" />
+              </items>
+            </Menu>
+          <Menu mnemonicParsing="false" text="Help" />
+          <Menu mnemonicParsing="false" text="About" />
+            <Menu mnemonicParsing="false" text="Exit" />
+        </menus>
+      </MenuBar>
+      <MediaView fx:id="mediaView" fitHeight="1500.0" fitWidth="1800.0" layoutX="1000.0" layoutY="1000.0" />
+      <Button fx:id="Mute" layoutX="6.0" layoutY="188.0" mnemonicParsing="false" onAction="#muteUnmute" prefHeight="28.0" prefWidth="120.0" text="Mute music" />
+   </children>
+</AnchorPane>
