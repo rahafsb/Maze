@@ -1,0 +1,163 @@
+2022.07.09 16:58:48.574 INFO  Model.MyModel - server for generating maze started at port 5400 and is ready to accept clients
+2022.07.09 17:22:17.962 INFO  Model.MyModel - server for generating maze started at port 5400 and is ready to accept clients
+2022.07.09 17:22:17.965 INFO  Model.MyModel - server for solving maze started at port 5401 and is ready to accept clients
+2022.07.09 17:22:17.966 INFO  Model.MyModel - client connected to server - IP Johns-MacBook-Pro.local/127.0.0.1, Port = 5400
+2022.07.09 17:22:17.967 INFO  Model.MyModel - client is asking for generating maze with the algorithm: algorithms.mazeGenerators.MyMazeGenerator@2f4063fb
+2022.07.09 17:22:17.969 INFO  Model.MyModel - Client is asking for generating a maze with rows 12 and columns 12
+2022.07.09 17:22:17.975 INFO  Model.MyModel - Client accepted a maze from the server successfully
+2022.07.09 17:23:03.459 INFO  Model.MyModel - client connected to server - IP Johns-MacBook-Pro.local/127.0.0.1, Port = 5401
+2022.07.09 17:23:03.460 INFO  Model.MyModel - Client is asking for solving a maze with the algorithm: algorithms.search.BreadthFirstSearch@395cf3b9
+2022.07.09 17:23:03.472 INFO  Model.MyModel - Client accepted a solution for the maze from the server
+2022.07.09 17:23:25.248 INFO  Model.MyModel - client connected to server - IP Johns-MacBook-Pro.local/127.0.0.1, Port = 5400
+2022.07.09 17:23:25.248 INFO  Model.MyModel - client is asking for generating maze with the algorithm: algorithms.mazeGenerators.MyMazeGenerator@2d483cce
+2022.07.09 17:23:25.249 INFO  Model.MyModel - Client is asking for generating a maze with rows 10 and columns 10
+2022.07.09 17:23:25.250 INFO  Model.MyModel - Client accepted a maze from the server successfully
+2022.07.09 17:23:36.493 INFO  Model.MyModel - Maze is saved successfully in the following file path: /Users/john-zaatri/Desktop/no relevant documents/maze1.txt
+2022.07.09 17:23:48.536 INFO  Model.MyModel - Maze is loaded successfully from the file path: /Users/john-zaatri/Desktop/no relevant documents/maze1.txt
+2022.07.09 17:24:14.712 INFO  Model.MyModel - client connected to server - IP Johns-MacBook-Pro.local/127.0.0.1, Port = 5400
+2022.07.09 17:24:14.712 INFO  Model.MyModel - client is asking for generating maze with the algorithm: algorithms.mazeGenerators.EmptyMazeGenerator@2470df5e
+2022.07.09 17:24:14.713 INFO  Model.MyModel - Client is asking for generating a maze with rows 10 and columns 10
+2022.07.09 17:24:14.714 INFO  Model.MyModel - Client accepted a maze from the server successfully
+2022.07.09 17:24:21.078 INFO  Model.MyModel - Both servers were stopped from working, and the game has been exited successfully
+2022.07.09 17:25:42.496 INFO  Model.MyModel - server for generating maze started at port 5400 and is ready to accept clients
+2022.07.09 17:25:42.499 INFO  Model.MyModel - server for solving maze started at port 5401 and is ready to accept clients
+2022.07.09 17:25:42.501 INFO  Model.MyModel - client connected to server - IP Johns-MacBook-Pro.local/127.0.0.1, Port = 5400
+2022.07.09 17:25:42.501 INFO  Model.MyModel - client is asking for generating maze with the algorithm: algorithms.mazeGenerators.EmptyMazeGenerator@1be5ed49
+2022.07.09 17:25:42.503 INFO  Model.MyModel - Client is asking for generating a maze with rows 12 and columns 12
+2022.07.09 17:25:42.509 INFO  Model.MyModel - Client accepted a maze from the server successfully
+2022.07.09 17:25:47.333 INFO  Model.MyModel - client connected to server - IP Johns-MacBook-Pro.local/127.0.0.1, Port = 5400
+2022.07.09 17:25:47.333 INFO  Model.MyModel - client is asking for generating maze with the algorithm: algorithms.mazeGenerators.EmptyMazeGenerator@7941f15
+2022.07.09 17:25:47.333 INFO  Model.MyModel - Client is asking for generating a maze with rows 12 and columns 12
+2022.07.09 17:25:47.335 INFO  Model.MyModel - Client accepted a maze from the server successfully
+2022.07.09 17:25:48.001 INFO  Model.MyModel - client connected to server - IP Johns-MacBook-Pro.local/127.0.0.1, Port = 5400
+2022.07.09 17:25:48.001 INFO  Model.MyModel - client is asking for generating maze with the algorithm: algorithms.mazeGenerators.EmptyMazeGenerator@47a4bd4a
+2022.07.09 17:25:48.001 INFO  Model.MyModel - Client is asking for generating a maze with rows 12 and columns 12
+2022.07.09 17:25:48.003 INFO  Model.MyModel - Client accepted a maze from the server successfully
+2022.07.09 17:25:48.400 INFO  Model.MyModel - client connected to server - IP Johns-MacBook-Pro.local/127.0.0.1, Port = 5400
+2022.07.09 17:25:48.400 INFO  Model.MyModel - client is asking for generating maze with the algorithm: algorithms.mazeGenerators.EmptyMazeGenerator@79aa32e0
+2022.07.09 17:25:48.400 INFO  Model.MyModel - Client is asking for generating a maze with rows 12 and columns 12
+2022.07.09 17:25:48.402 INFO  Model.MyModel - Client accepted a maze from the server successfully
+2022.07.09 17:25:48.583 INFO  Model.MyModel - client connected to server - IP Johns-MacBook-Pro.local/127.0.0.1, Port = 5400
+2022.07.09 17:25:48.583 INFO  Model.MyModel - client is asking for generating maze with the algorithm: algorithms.mazeGenerators.EmptyMazeGenerator@3cb0c5cc
+2022.07.09 17:25:48.583 INFO  Model.MyModel - Client is asking for generating a maze with rows 12 and columns 12
+2022.07.09 17:25:48.585 INFO  Model.MyModel - Client accepted a maze from the server successfully
+2022.07.09 17:25:59.101 INFO  Model.MyModel - client connected to server - IP Johns-MacBook-Pro.local/127.0.0.1, Port = 5400
+2022.07.09 17:25:59.101 INFO  Model.MyModel - client is asking for generating maze with the algorithm: algorithms.mazeGenerators.MyMazeGenerator@85a1509
+2022.07.09 17:25:59.101 INFO  Model.MyModel - Client is asking for generating a maze with rows 12 and columns 12
+2022.07.09 17:25:59.103 INFO  Model.MyModel - Client accepted a maze from the server successfully
+2022.07.09 17:25:59.766 INFO  Model.MyModel - client connected to server - IP Johns-MacBook-Pro.local/127.0.0.1, Port = 5400
+2022.07.09 17:25:59.767 INFO  Model.MyModel - client is asking for generating maze with the algorithm: algorithms.mazeGenerators.MyMazeGenerator@791616a
+2022.07.09 17:25:59.767 INFO  Model.MyModel - Client is asking for generating a maze with rows 12 and columns 12
+2022.07.09 17:25:59.768 INFO  Model.MyModel - Client accepted a maze from the server successfully
+2022.07.09 17:26:00.233 INFO  Model.MyModel - client connected to server - IP Johns-MacBook-Pro.local/127.0.0.1, Port = 5400
+2022.07.09 17:26:00.233 INFO  Model.MyModel - client is asking for generating maze with the algorithm: algorithms.mazeGenerators.MyMazeGenerator@5795809e
+2022.07.09 17:26:00.234 INFO  Model.MyModel - Client is asking for generating a maze with rows 12 and columns 12
+2022.07.09 17:26:00.235 INFO  Model.MyModel - Client accepted a maze from the server successfully
+2022.07.09 17:26:04.653 INFO  Model.MyModel - servers who was working is stopped from working, and the game has been exited successfully
+2022.07.09 17:52:53.760 INFO  Model.MyModel - server for generating maze started at port 5400 and is ready to accept clients
+2022.07.09 17:52:53.763 INFO  Model.MyModel - server for solving maze started at port 5401 and is ready to accept clients
+2022.07.09 17:52:56.563 INFO  Model.MyModel - servers who was working is stopped from working, and the game has been exited successfully
+2022.07.09 18:11:58.329 INFO  Model.MyModel - server for generating maze started at port 5400 and is ready to accept clients
+2022.07.09 18:11:58.333 INFO  Model.MyModel - server for solving maze started at port 5401 and is ready to accept clients
+2022.07.09 18:11:58.334 INFO  Model.MyModel - client connected to server - IP Johns-MacBook-Pro.local/127.0.0.1, Port = 5400
+2022.07.09 18:11:58.335 INFO  Model.MyModel - client is asking for generating maze with the algorithm: algorithms.mazeGenerators.MyMazeGenerator@490d6923
+2022.07.09 18:11:58.335 INFO  Model.MyModel - Client is asking for generating a maze with rows 12 and columns 12
+2022.07.09 18:11:58.341 INFO  Model.MyModel - Client accepted a maze from the server successfully
+2022.07.09 18:12:00.157 INFO  Model.MyModel - client connected to server - IP Johns-MacBook-Pro.local/127.0.0.1, Port = 5401
+2022.07.09 18:12:00.157 INFO  Model.MyModel - Client is asking for solving a maze with the algorithm: algorithms.search.DepthFirstSearch@3fcc3f3f
+2022.07.09 18:12:00.168 INFO  Model.MyModel - Client accepted a solution for the maze from the server
+2022.07.09 18:13:22.519 INFO  Model.MyModel - servers who was working is stopped from working, and the game has been exited successfully
+2022.07.09 18:14:43.671 INFO  Model.MyModel - server for generating maze started at port 5400 and is ready to accept clients
+2022.07.09 18:14:43.674 INFO  Model.MyModel - server for solving maze started at port 5401 and is ready to accept clients
+2022.07.09 18:14:43.677 INFO  Model.MyModel - client connected to server - IP Johns-MacBook-Pro.local/127.0.0.1, Port = 5400
+2022.07.09 18:14:43.677 INFO  Model.MyModel - client is asking for generating maze with the algorithm: algorithms.mazeGenerators.MyMazeGenerator@16060bdf
+2022.07.09 18:14:43.677 INFO  Model.MyModel - Client is asking for generating a maze with rows 12 and columns 12
+2022.07.09 18:14:43.684 INFO  Model.MyModel - Client accepted a maze from the server successfully
+2022.07.09 18:19:23.192 INFO  Model.MyModel - servers who was working is stopped from working, and the game has been exited successfully
+2022.07.09 18:21:08.042 INFO  Model.MyModel - server for generating maze started at port 5400 and is ready to accept clients
+2022.07.09 18:21:08.044 INFO  Model.MyModel - server for solving maze started at port 5401 and is ready to accept clients
+2022.07.09 18:21:08.046 INFO  Model.MyModel - client connected to server - IP Johns-MacBook-Pro.local/127.0.0.1, Port = 5400
+2022.07.09 18:21:08.047 INFO  Model.MyModel - client is asking for generating maze with the algorithm: algorithms.mazeGenerators.MyMazeGenerator@27cf84bc
+2022.07.09 18:21:08.047 INFO  Model.MyModel - Client is asking for generating a maze with rows 12 and columns 12
+2022.07.09 18:21:08.053 INFO  Model.MyModel - Client accepted a maze from the server successfully
+2022.07.09 18:21:09.277 INFO  Model.MyModel - client connected to server - IP Johns-MacBook-Pro.local/127.0.0.1, Port = 5401
+2022.07.09 18:21:09.278 INFO  Model.MyModel - Client is asking for solving a maze with the algorithm: algorithms.search.DepthFirstSearch@6811c46d
+2022.07.09 18:21:09.288 INFO  Model.MyModel - Client accepted a solution for the maze from the server
+2022.07.09 18:22:30.389 INFO  Model.MyModel - server for generating maze started at port 5400 and is ready to accept clients
+2022.07.09 18:22:30.391 INFO  Model.MyModel - server for solving maze started at port 5401 and is ready to accept clients
+2022.07.09 18:22:30.393 INFO  Model.MyModel - client connected to server - IP Johns-MacBook-Pro.local/127.0.0.1, Port = 5400
+2022.07.09 18:22:30.393 INFO  Model.MyModel - client is asking for generating maze with the algorithm: algorithms.mazeGenerators.MyMazeGenerator@53be787f
+2022.07.09 18:22:30.393 INFO  Model.MyModel - Client is asking for generating a maze with rows 12 and columns 12
+2022.07.09 18:22:30.399 INFO  Model.MyModel - Client accepted a maze from the server successfully
+2022.07.09 18:22:31.099 INFO  Model.MyModel - client connected to server - IP Johns-MacBook-Pro.local/127.0.0.1, Port = 5401
+2022.07.09 18:22:31.099 INFO  Model.MyModel - Client is asking for solving a maze with the algorithm: algorithms.search.DepthFirstSearch@2af728e6
+2022.07.09 18:22:31.110 INFO  Model.MyModel - Client accepted a solution for the maze from the server
+2022.07.09 18:24:42.924 INFO  Model.MyModel - server for generating maze started at port 5400 and is ready to accept clients
+2022.07.09 18:24:42.927 INFO  Model.MyModel - server for solving maze started at port 5401 and is ready to accept clients
+2022.07.09 18:24:42.928 INFO  Model.MyModel - client connected to server - IP Johns-MacBook-Pro.local/127.0.0.1, Port = 5400
+2022.07.09 18:24:42.929 INFO  Model.MyModel - client is asking for generating maze with the algorithm: algorithms.mazeGenerators.MyMazeGenerator@53be787f
+2022.07.09 18:24:42.929 INFO  Model.MyModel - Client is asking for generating a maze with rows 12 and columns 12
+2022.07.09 18:24:42.935 INFO  Model.MyModel - Client accepted a maze from the server successfully
+2022.07.09 18:24:43.774 INFO  Model.MyModel - client connected to server - IP Johns-MacBook-Pro.local/127.0.0.1, Port = 5401
+2022.07.09 18:24:43.775 INFO  Model.MyModel - Client is asking for solving a maze with the algorithm: algorithms.search.DepthFirstSearch@6811c46d
+2022.07.09 18:24:43.787 INFO  Model.MyModel - Client accepted a solution for the maze from the server
+2022.07.09 18:31:44.139 INFO  Model.MyModel - server for generating maze started at port 5400 and is ready to accept clients
+2022.07.09 18:31:44.142 INFO  Model.MyModel - server for solving maze started at port 5401 and is ready to accept clients
+2022.07.09 18:31:44.144 INFO  Model.MyModel - client connected to server - IP Johns-MacBook-Pro.local/127.0.0.1, Port = 5400
+2022.07.09 18:31:44.145 INFO  Model.MyModel - client is asking for generating maze with the algorithm: algorithms.mazeGenerators.MyMazeGenerator@4f871388
+2022.07.09 18:31:44.145 INFO  Model.MyModel - Client is asking for generating a maze with rows 300 and columns 300
+2022.07.09 18:31:44.299 INFO  Model.MyModel - Client accepted a maze from the server successfully
+2022.07.09 18:32:06.673 INFO  Model.MyModel - Maze is saved successfully in the following file path: /Users/john-zaatri/Desktop/no relevant documents/maze1.txt
+2022.07.09 18:32:10.839 INFO  Model.MyModel - client connected to server - IP Johns-MacBook-Pro.local/127.0.0.1, Port = 5401
+2022.07.09 18:32:10.839 INFO  Model.MyModel - Client is asking for solving a maze with the algorithm: algorithms.search.DepthFirstSearch@772b94fa
+2022.07.09 18:32:10.966 INFO  Model.MyModel - Client accepted a solution for the maze from the server
+2022.07.09 18:32:18.192 INFO  Model.MyModel - client connected to server - IP Johns-MacBook-Pro.local/127.0.0.1, Port = 5400
+2022.07.09 18:32:18.193 INFO  Model.MyModel - client is asking for generating maze with the algorithm: algorithms.mazeGenerators.MyMazeGenerator@2ce49b8a
+2022.07.09 18:32:18.193 INFO  Model.MyModel - Client is asking for generating a maze with rows 10 and columns 10
+2022.07.09 18:32:18.194 INFO  Model.MyModel - Client accepted a maze from the server successfully
+2022.07.09 18:32:20.204 INFO  Model.MyModel - client connected to server - IP Johns-MacBook-Pro.local/127.0.0.1, Port = 5401
+2022.07.09 18:32:20.204 INFO  Model.MyModel - Client is asking for solving a maze with the algorithm: algorithms.search.DepthFirstSearch@6dc0d521
+2022.07.09 18:32:20.209 INFO  Model.MyModel - Client accepted a solution for the maze from the server
+2022.07.09 18:33:05.791 INFO  Model.MyModel - client connected to server - IP Johns-MacBook-Pro.local/127.0.0.1, Port = 5400
+2022.07.09 18:33:05.792 INFO  Model.MyModel - client is asking for generating maze with the algorithm: algorithms.mazeGenerators.SimpleMazeGenerator@2602d88b
+2022.07.09 18:33:05.793 INFO  Model.MyModel - Client is asking for generating a maze with rows 50 and columns 50
+2022.07.09 18:33:05.799 INFO  Model.MyModel - Client accepted a maze from the server successfully
+2022.07.09 18:33:07.974 INFO  Model.MyModel - client connected to server - IP Johns-MacBook-Pro.local/127.0.0.1, Port = 5400
+2022.07.09 18:33:07.974 INFO  Model.MyModel - client is asking for generating maze with the algorithm: algorithms.mazeGenerators.SimpleMazeGenerator@51d1f27b
+2022.07.09 18:33:07.974 INFO  Model.MyModel - Client is asking for generating a maze with rows 50 and columns 50
+2022.07.09 18:33:07.981 INFO  Model.MyModel - Client accepted a maze from the server successfully
+2022.07.09 18:33:08.624 INFO  Model.MyModel - client connected to server - IP Johns-MacBook-Pro.local/127.0.0.1, Port = 5400
+2022.07.09 18:33:08.624 INFO  Model.MyModel - client is asking for generating maze with the algorithm: algorithms.mazeGenerators.SimpleMazeGenerator@642f4572
+2022.07.09 18:33:08.624 INFO  Model.MyModel - Client is asking for generating a maze with rows 50 and columns 50
+2022.07.09 18:33:08.627 INFO  Model.MyModel - Client accepted a maze from the server successfully
+2022.07.09 18:33:10.557 INFO  Model.MyModel - client connected to server - IP Johns-MacBook-Pro.local/127.0.0.1, Port = 5401
+2022.07.09 18:33:10.558 INFO  Model.MyModel - Client is asking for solving a maze with the algorithm: algorithms.search.BestFirstSearch@446f1450
+2022.07.09 18:33:10.563 INFO  Model.MyModel - Client accepted a solution for the maze from the server
+2022.07.09 18:33:15.075 INFO  Model.MyModel - client connected to server - IP Johns-MacBook-Pro.local/127.0.0.1, Port = 5401
+2022.07.09 18:33:15.075 INFO  Model.MyModel - Client is asking for solving a maze with the algorithm: algorithms.search.BestFirstSearch@4eb3451c
+2022.07.09 18:33:15.078 INFO  Model.MyModel - Client accepted a solution for the maze from the server
+2022.07.09 18:34:47.330 INFO  Model.MyModel - server for generating maze started at port 5400 and is ready to accept clients
+2022.07.09 18:34:47.333 INFO  Model.MyModel - server for solving maze started at port 5401 and is ready to accept clients
+2022.07.09 18:34:55.533 INFO  Model.MyModel - client connected to server - IP Johns-MacBook-Pro.local/127.0.0.1, Port = 5400
+2022.07.09 18:34:55.533 INFO  Model.MyModel - client is asking for generating maze with the algorithm: algorithms.mazeGenerators.SimpleMazeGenerator@6f319f1
+2022.07.09 18:34:55.533 INFO  Model.MyModel - Client is asking for generating a maze with rows 12 and columns 12
+2022.07.09 18:34:55.541 INFO  Model.MyModel - Client accepted a maze from the server successfully
+2022.07.09 18:34:57.697 INFO  Model.MyModel - client connected to server - IP Johns-MacBook-Pro.local/127.0.0.1, Port = 5400
+2022.07.09 18:34:57.697 INFO  Model.MyModel - client is asking for generating maze with the algorithm: algorithms.mazeGenerators.SimpleMazeGenerator@49370983
+2022.07.09 18:34:57.697 INFO  Model.MyModel - Client is asking for generating a maze with rows 12 and columns 12
+2022.07.09 18:34:57.698 INFO  Model.MyModel - Client accepted a maze from the server successfully
+2022.07.09 18:34:58.864 INFO  Model.MyModel - client connected to server - IP Johns-MacBook-Pro.local/127.0.0.1, Port = 5400
+2022.07.09 18:34:58.865 INFO  Model.MyModel - client is asking for generating maze with the algorithm: algorithms.mazeGenerators.SimpleMazeGenerator@712206cd
+2022.07.09 18:34:58.865 INFO  Model.MyModel - Client is asking for generating a maze with rows 12 and columns 12
+2022.07.09 18:34:58.867 INFO  Model.MyModel - Client accepted a maze from the server successfully
+2022.07.09 18:34:59.631 INFO  Model.MyModel - client connected to server - IP Johns-MacBook-Pro.local/127.0.0.1, Port = 5400
+2022.07.09 18:34:59.631 INFO  Model.MyModel - client is asking for generating maze with the algorithm: algorithms.mazeGenerators.SimpleMazeGenerator@4a181d69
+2022.07.09 18:34:59.631 INFO  Model.MyModel - Client is asking for generating a maze with rows 12 and columns 12
+2022.07.09 18:34:59.633 INFO  Model.MyModel - Client accepted a maze from the server successfully
+2022.07.09 18:35:28.989 INFO  Model.MyModel - Maze is loaded successfully from the file path: /Users/john-zaatri/Desktop/no relevant documents/maze1.txt
+2022.07.09 18:43:32.662 INFO  Model.MyModel - server for generating maze started at port 5400 and is ready to accept clients
+2022.07.09 18:43:32.664 INFO  Model.MyModel - server for solving maze started at port 5401 and is ready to accept clients
+2022.07.09 18:43:32.666 INFO  Model.MyModel - client connected to server - IP Johns-MacBook-Pro.local/127.0.0.1, Port = 5400
+2022.07.09 18:43:32.666 INFO  Model.MyModel - client is asking for generating maze with the algorithm: algorithms.mazeGenerators.SimpleMazeGenerator@3cb62f0d
+2022.07.09 18:43:32.666 INFO  Model.MyModel - Client is asking for generating a maze with rows 12 and columns 12
+2022.07.09 18:43:32.672 INFO  Model.MyModel - Client accepted a maze from the server successfully
